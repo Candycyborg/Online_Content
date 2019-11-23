@@ -35,22 +35,22 @@ This means embeddings allow us to build much more generalisable models–instead
 If we take 5 example words from our vocabulary (say… the words “aardvark”, “black”, “cat”, “duvet” and “zombie”) and examine their embedding vectors created by the one-hot encoding method discussed above, the result would look like this:
 ## Word Embedding Algorithms
 
+- Bulleted
+- List
+
 1. Embedding Layer
 2. Word2Vec
 3. GloVe
 4. ELMo
-## Using Word Embeddings
-Learn an Embedding (stand alone or jointly)
-Reuse an Embedding (word2vec and GloVe word embeddings )
-## Why ELMo?
-### Motivation
-Other models such as word2vec, Fasttext, Glove, etc. also generates the embeddings of words, but we chose ElMo because of few reasons. Let's see them:
 
-* Elmo provides the embedding of a word that is present inside a sentence i.e. a word may have a different meaning depending on the context where it is being used similar to the example above in the photo. The word “Apple” may be a ‘Brand’ name as well as a ‘fruit’. So, if a query is given like ‘Apple Juice’ the embedding generated for the token ‘apple’ here will be different from the one in ‘Apple Laptop’. And in general e-commerce search query, this case is likely to happen.
 
-* Another reason, since LSTM network is being used internally in ELMo model, we need to bother about the word that is not present in the dictionary of the training dataset as it generates the character embedding as well. It allows the network to use morphological clues to form robust representations for out-of-vocabulary tokens unseen in training. We generally face the out-of-vocabulary token problem in case of the brand names.
+## ELMO ARCHITECTURE 
 
-* ELMo furthermore won the best paper award at NAACL-HLT 2018, one of the top conferences in the field.
+ELMO word vectors are computed on top of a two-layer bidirectional language model (biLM). This biLM model has two layers stacked together. Each layer has 2 passes — forward pass and backward pass
+
+- Bulleted Raw strings are converted into word Vectors by Character level Convolution neural network(CNN)
+- Bulleted These Word Vectors are fed to First layer of bilm.
+
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
