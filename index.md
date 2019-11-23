@@ -33,6 +33,8 @@ The core problem that embeddings solve is generalisation.
 
 This means embeddings allow us to build much more generalisable models–instead of the network needing to scramble to learn many disparate ways to handle disconnected input, we instead let similar words “share” parameters and computation paths.
 If we take 5 example words from our vocabulary (say… the words “aardvark”, “black”, “cat”, “duvet” and “zombie”) and examine their embedding vectors created by the one-hot encoding method discussed above, the result would look like this:
+<a href="{{ https://github.com/Abeast-1651/Online_Content/blob/master/Relation.jpeg}}" ></a>
+
 ## Word Embedding Algorithms
 
 1. Embedding Layer
