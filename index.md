@@ -33,8 +33,8 @@ The core problem that embeddings solve is generalisation.
 
 This means embeddings allow us to build much more generalisable models–instead of the network needing to scramble to learn many disparate ways to handle disconnected input, we instead let similar words “share” parameters and computation paths.
 If we take 5 example words from our vocabulary (say… the words “aardvark”, “black”, “cat”, “duvet” and “zombie”) and examine their embedding vectors created by the one-hot encoding method discussed above, the result would look like this:
-<a href="{{ https://github.com/Abeast-1651/Online_Content/blob/master/Relation.jpeg}}" ></a>
 
+'print('Hello world)'
 ## Word Embedding Algorithms
 
 1. Embedding Layer
@@ -42,10 +42,9 @@ If we take 5 example words from our vocabulary (say… the words “aardvark”,
 3. GloVe
 4. ELMo
 
-
 ## Why ELMo?
-
 ### Motivation 
+
 Other models such as word2vec, Fasttext, Glove, etc. also generates the embeddings of words, but we chose ElMo because of few reasons. Let's see them:
 
 * Elmo provides the embedding of a word that is present inside a sentence i.e. a word may have a different meaning depending on the context where it is being used similar to the example above in the photo. The word “Apple” may be a ‘Brand’ name as well as a ‘fruit’. So, if a query is given like ‘Apple Juice’ the embedding generated for the token ‘apple’ here will be different from the one in ‘Apple Laptop’. And in general e-commerce search query, this case is likely to happen.
@@ -58,11 +57,15 @@ Other models such as word2vec, Fasttext, Glove, etc. also generates the embeddin
 
 ELMO word vectors are computed on top of a two-layer bidirectional language model (biLM). This biLM model has two layers stacked together. Each layer has 2 passes — forward pass and backward pass
 
-- Bulleted Raw strings are converted into word Vectors by Character level Convolution neural network(CNN)
-- Bulleted These Word Vectors are fed to First layer of bilm.
+- Raw strings are converted into word Vectors by Character level Convolution neural network(CNN)
+- These Word Vectors are fed to First layer of bilm.
+- Fordward pass of bilm layer contains information about a certain word and the context before that word.
+- Backward pass similar to forward Pass conatains information about the word and the context after it.
+- Forward and backward pass both together form intermediate word vector
+- The Intermediate Word vector are fed to second layer of bilm.
+- The final representation (ELMo) is the weighted sum of the raw word vectors and the 2 intermediate word vectors
 
-
-
+<img src="Online_Content/output_YyJc8E.gif" class="inline"/>
 ## Support or Contact
 * Abhisht Tiwari 
 * Ayush Agarwal
