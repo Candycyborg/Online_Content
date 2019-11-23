@@ -68,6 +68,23 @@ ELMO word vectors are computed on top of a two-layer bidirectional language mode
 ![ELMO](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2019/03/output_YyJc8E.gif)
 ![hi](https://miro.medium.com/max/711/1*_HsSVBam0IZc2LqbbkzC-A.png)
 
+
+## Code
+
+``` python
+import tensorflow as tf
+import tensorflow_hub as hub
+import pandas as pd
+from sklearn import preprocessing
+import keras
+import numpy as np
+from keras.layers import Input, Lambda, Dense
+from keras.models import Model
+import keras.backend as K
+```
+
+
+
 ## Submitted By :
 * Abhisht Tiwari 
 * Ayush Agarwal
