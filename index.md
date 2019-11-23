@@ -1,3 +1,5 @@
+github:
+  is_project_page: false
 # ELMo Word Embedding
 ## Introduction
 
@@ -32,13 +34,15 @@ The core problem that embeddings solve is generalisation.
 
 This means embeddings allow us to build much more generalisable models–instead of the network needing to scramble to learn many disparate ways to handle disconnected input, we instead let similar words “share” parameters and computation paths.
 If we take 5 example words from our vocabulary (say… the words “aardvark”, “black”, “cat”, “duvet” and “zombie”) and examine their embedding vectors created by the one-hot encoding method discussed above, the result would look like this:
-### Header 3
+## Word Embedding Algorithms
 
 - Bulleted
 - List
 
-1. Numbered
-2. List
+1. Embedding Layer
+2. Word2Vec
+3. GloVe
+4. ELMo
 
 **Bold** and _Italic_ and `Code` text
 
