@@ -48,8 +48,13 @@ If we take 5 example words from our vocabulary (say… the words “aardvark”,
 
 ELMO word vectors are computed on top of a two-layer bidirectional language model (biLM). This biLM model has two layers stacked together. Each layer has 2 passes — forward pass and backward pass
 
-- Bulleted Raw strings are converted into word Vectors by Character level Convolution neural network(CNN)
-- Bulleted These Word Vectors are fed to First layer of bilm.
+- Raw strings are converted into word Vectors by Character level Convolution neural network(CNN)
+- These Word Vectors are fed to First layer of bilm.
+- Fordward pass of bilm layer contains information about a certain word and the context before that word.
+- Backward pass similar to forward Pass conatains information about the word and the context after it.
+- Forward and backward pass both together form intermediate word vector
+- The Intermediate Word vector are fed to second layer of bilm.
+- The final representation (ELMo) is the weighted sum of the raw word vectors and the 2 intermediate word vectors
 
 
 
