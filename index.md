@@ -11,10 +11,10 @@ ELMo is a deep contextualized word representation that models both complex chara
 
 A word embedding is a learned representation for text where words that have the same meaning have a similar representation.
 
-It is this approach to representing words and documents that may be considered one of the key breakthroughs of deep learning on challenging natural language processing problems.\
-\
-"*One of the benefits of using dense and low-dimensional vectors is computational: the majority of neural network toolkits do not play well with very high-dimensional, sparse vectors. … The main benefit of the dense representations is generalization power: if we believe some features may provide similar clues, it is worthwhile to provide a representation that is able to capture these similarities*."\
-\
+It is this approach to representing words and documents that may be considered one of the key breakthroughs of deep learning on challenging natural language processing problems.
+
+"*One of the benefits of using dense and low-dimensional vectors is computational: the majority of neural network toolkits do not play well with very high-dimensional, sparse vectors. … The main benefit of the dense representations is generalization power: if we believe some features may provide similar clues, it is worthwhile to provide a representation that is able to capture these similarities*."
+
 **-- Page 92, Neural Network Methods in Natural Language Processing, 2017.
 In simple language:
 
@@ -33,8 +33,8 @@ The core problem that embeddings solve is generalisation.
 
 This means embeddings allow us to build much more generalisable models–instead of the network needing to scramble to learn many disparate ways to handle disconnected input, we instead let similar words “share” parameters and computation paths.
 If we take 5 example words from our vocabulary (say… the words “aardvark”, “black”, “cat”, “duvet” and “zombie”) and examine their embedding vectors created by the one-hot encoding method discussed above, the result would look like this:
+![Hello](https://miro.medium.com/max/1286/1*AzOH04Gp1XrYPthCurFPfQ.jpeg)
 
-'print('Hello world)'
 ## Word Embedding Algorithms
 
 1. Embedding Layer
@@ -66,7 +66,9 @@ ELMO word vectors are computed on top of a two-layer bidirectional language mode
 - The final representation (ELMo) is the weighted sum of the raw word vectors and the 2 intermediate word vectors
 
 ![ELMO](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2019/03/output_YyJc8E.gif)
-## Support or Contact
+![hi](https://miro.medium.com/max/711/1*_HsSVBam0IZc2LqbbkzC-A.png)
+
+## Submitted By :
 * Abhisht Tiwari 
 * Ayush Agarwal
 
