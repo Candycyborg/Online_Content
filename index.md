@@ -65,7 +65,7 @@ ELMO word vectors are computed on top of a two-layer bidirectional language mode
 - The Intermediate Word vector are fed to second layer of bilm.
 - The final representation (ELMo) is the weighted sum of the raw word vectors and the 2 intermediate word vectors
 
-<img src="Online_Content/output_YyJc8E.gif" class="inline"/>
+![Minion](https://octodex.github.com/images/minion.png)
 ## Support or Contact
 * Abhisht Tiwari 
 * Ayush Agarwal
