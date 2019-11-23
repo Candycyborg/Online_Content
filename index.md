@@ -1,9 +1,11 @@
-## Welcome to GitHub Pages
+# ELMo Word Embedding
+## Introduction
 
-You can use the [editor on GitHub](https://github.com/Abeast-1651/Online_Content/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+ELMo is created by AllenNLP which provides the contextualized word embeddings whose vector representation for a word differs in a sentence to sentence.\
+\
+Now let’s see the real-life application of EMLo embedding, suppose  you are looking for ‘sony’ on goolge then it predicts 'liv'and 'six liv' in order to make the result more precise and now you would be able to get what you want thus making our lives more easier.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
+ELMo is a deep contextualized word representation that models both complex characteristics of word use, and how these uses vary across linguistic contexts. These word vectors are learned functions of the internal states of a deep bidirectional language model, which is pre-trained on a large text corpus. \
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
