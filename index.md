@@ -71,6 +71,7 @@ ELMO word vectors are computed on top of a two-layer bidirectional language mode
 
 ## Code
 
+Importing libraries
 ``` python
 import tensorflow as tf
 import tensorflow_hub as hub
@@ -81,6 +82,11 @@ import numpy as np
 from keras.layers import Input, Lambda, Dense
 from keras.models import Model
 import keras.backend as K
+```
+importing Pre-trained ELMO model from Tf-Hub
+``` python
+url = "https://tfhub.dev/google/elmo/2"
+embed = hub.Module(url)
 ```
 
 
